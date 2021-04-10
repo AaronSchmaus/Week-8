@@ -22,7 +22,7 @@
                 terms=document.getElementById("txtTerms").value;
                 if(name =="")
                     {
-                        document.getElementById("txtName").style.backgroundColor="yellow";
+                        document.getElementById("txtName").style.backgroundColor="red";
                         document.getElementById("txtName").focus();
                     }
                     else
@@ -31,7 +31,7 @@
                     }
                     if(email =="")
                     {
-                        document.getElementById("txtEmail").style.backgroundColor="yellow";
+                        document.getElementById("txtEmail").style.backgroundColor="red";
                         document.getElementById("txtEmail").focus();
                     }
                     else
@@ -40,7 +40,7 @@
                     }
                     if(phone =="")
                     {
-                        document.getElementById("txtPhone").style.backgroundColor="yellow";
+                        document.getElementById("txtPhone").style.backgroundColor="red";
                         document.getElementById("txtPhone").focus();
                     }
                     else
@@ -49,7 +49,7 @@
                     }
                     if(terms =="")
                     {
-                        document.getElementById("txtTerms").style.backgroundColor="yellow";
+                        document.getElementById("txtTerms").style.backgroundColor="red";
                         document.getElementById("txtTerms").focus();
                     }
                     else
