@@ -1,0 +1,86 @@
+<html>
+    <title>Form Submission</title>
+    <head>
+        <style>
+            body{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: large;
+                background-color: bisque;
+            }
+        </style>
+        <script>
+            function checkForm()
+            {
+                var name;
+                var email;
+                var phone;
+                var terms;
+
+                email=document.getElementById("txtEmail").value;
+                phone=document.getElementById("txtPhone").value;
+                name=document.getElementById("txtName").value;
+                terms=document.getElementById("txtTerms").value;
+                if(name =="")
+                    {
+                        document.getElementById("txtName").style.backgroundColor="yellow";
+                        document.getElementById("txtName").focus();
+                    }
+                    else
+                    {
+                        document.getElementById("txtName").style.backgroundColor="white";
+                    }
+                    if(email =="")
+                    {
+                        document.getElementById("txtEmail").style.backgroundColor="yellow";
+                        document.getElementById("txtEmail").focus();
+                    }
+                    else
+                    {
+                        document.getElementById("txtEmail").style.backgroundColor="white";
+                    }
+                    if(phone =="")
+                    {
+                        document.getElementById("txtPhone").style.backgroundColor="yellow";
+                        document.getElementById("txtPhone").focus();
+                    }
+                    else
+                    {
+                        document.getElementById("txtPhone").style.backgroundColor="white";
+                    }
+                    if(terms =="")
+                    {
+                        document.getElementById("txtTerms").style.backgroundColor="yellow";
+                        document.getElementById("txtTerms").focus();
+                    }
+                    else
+                    {
+                        document.getElementById("txtTerms").style.backgroundColor="white";
+                    }
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="txtName"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="txtEmail"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" id="txtPhone"></td>
+            </tr>
+            <tr>
+                <td>Agree to Terms</td>
+                <td><input type="text" id="txtTerms"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnSubmit" onclick="checkForm();">Submit</button></td>
+            </tr>
+        </table>
+    </body>
+    <p><a href="Terms.html" target="_new">Terms Agreement</a></p>
+</html>
